@@ -36,6 +36,30 @@
       "apply": {
         "model": "wallpapers:block/prismarine_baseboard"
       }
+    },
+    {
+      "when": {
+        "baseboard": "stone"
+      },
+      "apply": {
+        "model": "wallpapers:block/stone_baseboard"
+      }
+    },
+    {
+      "when": {
+        "baseboard": "deepslate"
+      },
+      "apply": {
+        "model": "wallpapers:block/deepslate_baseboard"
+      }
+    },
+    {
+      "when": {
+        "baseboard": "blackstone"
+      },
+      "apply": {
+        "model": "wallpapers:block/blackstone_baseboard"
+      }
     }
   ]
 }

@@ -1,6 +1,6 @@
 {
   "type": "minecraft:crafting_shaped",
-  "group": "baseboards",
+  "group": "skirtings",
   "pattern": [
     "GGG"
   ],
@@ -11,6 +11,6 @@
   },
   "result": {
     "item": "wallpapers:gold_baseboard",
-    "count": 15
+    "count": 16
   }
 }

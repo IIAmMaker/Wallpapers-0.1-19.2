@@ -30,8 +30,7 @@ public class ModSounds {
             ModSounds.WALLPAPER_BLOCK_FALL);
 
     private static RegistryObject<SoundEvent> registerSoundEvents(String name) {
-        ResourceLocation id = new ResourceLocation(Wallpapers.MOD_ID, name);
-        return SOUND_EVENTS.register(name, () -> new SoundEvent(new ResourceLocation(Wallpapers.MOD_ID, name)));
+        return SOUND_EVENTS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(Wallpapers.MOD_ID, name)));
     }
 
     public static void register(IEventBus eventBus) {

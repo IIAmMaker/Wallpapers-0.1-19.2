@@ -16,6 +16,22 @@
     "wallpapers:gray_wallpaper_block",
     "wallpapers:light_gray_wallpaper_block",
     "wallpapers:white_wallpaper_block",
-    "wallpapers:primary_wallpaper_block"
+    "wallpapers:primary_wallpaper_block",
+    "wallpapers:maroon_wallpaper_block",
+    "wallpapers:rose_wallpaper_block",
+    "wallpapers:coral_wallpaper_block",
+    "wallpapers:indigo_wallpaper_block",
+    "wallpapers:navy_wallpaper_block",
+    "wallpapers:slate_wallpaper_block",
+    "wallpapers:olive_wallpaper_block",
+    "wallpapers:amber_wallpaper_block",
+    "wallpapers:beige_wallpaper_block",
+    "wallpapers:teal_wallpaper_block",
+    "wallpapers:mint_wallpaper_block",
+    "wallpapers:aqua_wallpaper_block",
+    "wallpapers:verdant_wallpaper_block",
+    "wallpapers:forest_wallpaper_block",
+    "wallpapers:ginger_wallpaper_block",
+    "wallpapers:tan_wallpaper_block"
   ]
 }

@@ -85,6 +85,63 @@
           }
         }
       ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "wallpapers:stone_baseboard"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "wallpapers:light_gray_wallpaper_block",
+          "properties": {
+            "baseboard": "stone"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "wallpapers:deepslate_baseboard"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "wallpapers:light_gray_wallpaper_block",
+          "properties": {
+            "baseboard": "deepslate"
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "bonus_rolls": 0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "wallpapers:blackstone_baseboard"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "wallpapers:light_gray_wallpaper_block",
+          "properties": {
+            "baseboard": "blackstone"
+          }
+        }
+      ]
     }
   ],
   "random_sequence": "wallpapers:blocks/light_gray_wallpaper_block"

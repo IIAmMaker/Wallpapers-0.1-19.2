@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "skirtings",
+  "pattern": [
+    "D#D"
+  ],
+  "key": {
+    "D": {
+      "item": "minecraft:deepslate"
+    },
+    "#": {
+      "tag": "wallpapers:skirtings"
+    }
+  },
+  "result": {
+    "item": "wallpapers:deepslate_baseboard",
+    "count": 16
+  }
+}
