@@ -16,8 +16,7 @@
 # **Compatibility:**
 - [Dye Depot](https://modrinth.com/mod/dye-depot)
 
-
-![Roooooooooooll](https://imgur.com/pYYVy43.png)
+---
 
 <center> <h2>Also try:</h2>
 <a href="https://modrinth.com/mod/paintable" rel="nofollow"><img src="https://cdn.modrinth.com/data/pNalfbjI/6f74912c7a407cc863c9a41cbf6215430568cf96.png" width="125" height="125"></a>
