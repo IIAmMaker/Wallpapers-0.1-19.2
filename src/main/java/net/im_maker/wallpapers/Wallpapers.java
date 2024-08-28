@@ -1,7 +1,11 @@
 package net.im_maker.wallpapers;
 
 import com.mojang.logging.LogUtils;
+import net.im_maker.wallpapers.common.block.ModBlocks;
+import net.im_maker.wallpapers.common.item.ModItems;
 import net.im_maker.wallpapers.common.sound.ModSounds;
+import net.im_maker.wallpapers.config.WallpapersClientConfigs;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -9,18 +13,20 @@ import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModList;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.im_maker.wallpapers.common.block.ModBlocks;
-import net.im_maker.wallpapers.common.item.ModItems;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.MissingMappingsEvent;
 import org.slf4j.Logger;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(Wallpapers.MOD_ID)
 public class Wallpapers {
     public static final String MOD_ID = "wallpapers";
+    public static final String[] SkirtingBoards = new String[]{"dripstone", "quartz", "gold", "prismarine", "stone", "deepslate", "blackstone"};
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public Wallpapers() {
@@ -30,11 +36,38 @@ public class Wallpapers {
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
-
+        ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, WallpapersClientConfigs.SPEC, "wallpapers-client.toml");
 
         MinecraftForge.EVENT_BUS.register(this);
 
         modEventBus.addListener(this::addCreative);
+    }
+
+    @SubscribeEvent
+    public void onMissing(MissingMappingsEvent event) {
+        for (String board_type : SkirtingBoards) {
+            for (MissingMappingsEvent.Mapping mapping : event.getMappings(ForgeRegistries.Keys.ITEMS, "wallpapers")) {
+                ResourceLocation oldId = mapping.getKey();
+                if (oldId.toString().equals("wallpapers:"+ board_type +"_baseboard")) {
+                    ResourceLocation newId = new ResourceLocation("wallpapers", board_type +"_skirting_board");
+                    mapping.remap(ForgeRegistries.ITEMS.getValue(newId));
+                }
+            }
+            for (MissingMappingsEvent.Mapping mapping : event.getMappings(ForgeRegistries.Keys.ITEMS, "wallpapers")) {
+                ResourceLocation oldId = mapping.getKey();
+                if (oldId.toString().equals("wallpapers:broken_quartz_baseboard")) {
+                    ResourceLocation newId = new ResourceLocation("wallpapers", "broken_quartz_skirting_board");
+                    mapping.remap(ForgeRegistries.ITEMS.getValue(newId));
+                }
+            }
+        }
+        for (MissingMappingsEvent.Mapping mapping : event.getMappings(ForgeRegistries.Keys.BLOCK_STATE_PROVIDER_TYPES, "wallpapers")) {
+            ResourceLocation oldId = mapping.getKey();
+            if (oldId.toString().equals("wallpapers:baseboard")) {
+                ResourceLocation newId = new ResourceLocation("wallpapers", "skirting_board");
+                mapping.remap(ForgeRegistries.BLOCK_STATE_PROVIDER_TYPES.getValue(newId));
+            }
+        }
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {
@@ -60,6 +93,7 @@ public class Wallpapers {
             event.accept(ModBlocks.MAGENTA_WALLPAPER_BLOCK);
             event.accept(ModBlocks.PINK_WALLPAPER_BLOCK);
             event.accept(ModBlocks.PRIMARY_WALLPAPER_BLOCK);
+            event.accept(ModBlocks.FROSTED_WALLPAPER_BLOCK);
             if (ModList.get().isLoaded("dye_depot")) {
                 event.accept(ModBlocks.MAROON_WALLPAPER_BLOCK);
                 event.accept(ModBlocks.ROSE_WALLPAPER_BLOCK);
@@ -80,7 +114,6 @@ public class Wallpapers {
             }
         }
         if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-
             event.accept(ModItems.WHITE_WALLPAPER_ROLL);
             event.accept(ModItems.LIGHT_GRAY_WALLPAPER_ROLL);
             event.accept(ModItems.GRAY_WALLPAPER_ROLL);
@@ -98,6 +131,7 @@ public class Wallpapers {
             event.accept(ModItems.MAGENTA_WALLPAPER_ROLL);
             event.accept(ModItems.PINK_WALLPAPER_ROLL);
             event.accept(ModItems.PRIMARY_WALLPAPER_ROLL);
+            event.accept(ModItems.FROSTED_WALLPAPER_ROLL);
             if (ModList.get().isLoaded("dye_depot")) {
                 event.accept(ModItems.MAROON_WALLPAPER_ROLL);
                 event.accept(ModItems.ROSE_WALLPAPER_ROLL);
@@ -116,17 +150,16 @@ public class Wallpapers {
                 event.accept(ModItems.GINGER_WALLPAPER_ROLL);
                 event.accept(ModItems.TAN_WALLPAPER_ROLL);
             }
-            event.accept(ModItems.DRIPSTONE_BASEBOARD);
-            event.accept(ModItems.GOLD_BASEBOARD);
-            event.accept(ModItems.QUARTZ_BASEBOARD);
-            event.accept(ModItems.PRISMARINE_BASEBOARD);
-            event.accept(ModItems.STONE_BASEBOARD);
-            event.accept(ModItems.DEEPSLATE_BASEBOARD);
-            event.accept(ModItems.BLACKSTONE_BASEBOARD);
+            event.accept(ModItems.DRIPSTONE_SKIRTING_BOARD);
+            event.accept(ModItems.GOLD_SKIRTING_BOARD);
+            event.accept(ModItems.QUARTZ_SKIRTING_BOARD);
+            event.accept(ModItems.PRISMARINE_SKIRTING_BOARD);
+            event.accept(ModItems.STONE_SKIRTING_BOARD);
+            event.accept(ModItems.DEEPSLATE_SKIRTING_BOARD);
+            event.accept(ModItems.BLACKSTONE_SKIRTING_BOARD);
         }
     }
 
-    // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
     public static class ClientModEvents {
         @SubscribeEvent
