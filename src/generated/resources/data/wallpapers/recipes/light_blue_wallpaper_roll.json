@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:light_blue_dye"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "S": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PDP",
+    "PSP"
+  ],
+  "result": {
+    "count": 16,
+    "item": "wallpapers:light_blue_wallpaper_roll"
+  },
+  "show_notification": true
+}

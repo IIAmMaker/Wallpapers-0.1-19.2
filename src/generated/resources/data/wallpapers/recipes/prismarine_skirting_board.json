@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:prismarine"
+    },
+    "C": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "pattern": [
+    " C ",
+    "###"
+  ],
+  "result": {
+    "count": 12,
+    "item": "wallpapers:prismarine_skirting_board"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "item": "minecraft:cobblestone"
+    },
+    "C": {
+      "item": "minecraft:clay_ball"
+    }
+  },
+  "pattern": [
+    " C ",
+    "###"
+  ],
+  "result": {
+    "count": 12,
+    "item": "wallpapers:stone_skirting_board"
+  },
+  "show_notification": true
+}

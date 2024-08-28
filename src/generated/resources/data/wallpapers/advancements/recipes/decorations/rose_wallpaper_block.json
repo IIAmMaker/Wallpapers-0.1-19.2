@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_rose_wallpaper_roll": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "wallpapers:rose_wallpaper_roll"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "wallpapers:rose_wallpaper_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_rose_wallpaper_roll",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "wallpapers:rose_wallpaper_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

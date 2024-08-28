@@ -1,0 +1,9 @@
+{
+  "parent": "wallpapers:block/template_crown_molding",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "crown_molding": "wallpapers:block/gold_skirting_board",
+    "crown_molding_up": "wallpapers:block/gold_skirting_board_bottom",
+    "particle": "wallpapers:block/gold_skirting_board"
+  }
+}

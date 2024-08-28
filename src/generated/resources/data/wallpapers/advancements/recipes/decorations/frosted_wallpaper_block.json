@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_frosted_wallpaper_roll": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "wallpapers:frosted_wallpaper_roll"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "wallpapers:frosted_wallpaper_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_frosted_wallpaper_roll",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "wallpapers:frosted_wallpaper_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

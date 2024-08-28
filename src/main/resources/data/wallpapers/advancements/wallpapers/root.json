@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "wallpapers:red_wallpaper_roll"
+      "item": "wallpapers:ultimate_wallpaper_roll"
     },
     "title": {
       "translate": "advancements.wallpapers.root.title"
@@ -9,7 +9,7 @@
     "description": {
       "translate": "advancements.wallpapers.root.description"
     },
-    "background": "wallpapers:textures/gui/advancements/backgrounds/purple_wallpaper_block.png",
+    "background": "wallpapers:textures/gui/advancements/backgrounds/green_wallpaper_block.png",
     "frame": "task",
     "show_toast": true,
     "announce_to_chat": false,

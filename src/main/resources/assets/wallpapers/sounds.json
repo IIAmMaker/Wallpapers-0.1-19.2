@@ -62,13 +62,22 @@
     ],
     "subtitle": "subtitles.item.wallpaper_roll.wallpapering"
   },
-  "item.baseboard.place": {
+  "item.skirting_board.place": {
     "sounds": [
-      "wallpapers:item/baseboard/place1",
-      "wallpapers:item/baseboard/place2",
-      "wallpapers:item/baseboard/place3",
-      "wallpapers:item/baseboard/place4"
+      "wallpapers:item/skirting_board/place1",
+      "wallpapers:item/skirting_board/place2",
+      "wallpapers:item/skirting_board/place3",
+      "wallpapers:item/skirting_board/place4"
     ],
-    "subtitle": "subtitles.item.baseboard.place"
+    "subtitle": "subtitles.item.skirting_board.place"
+  },
+  "item.skirting_board.remove": {
+    "sounds": [
+      "wallpapers:item/skirting_board/place1",
+      "wallpapers:item/skirting_board/place2",
+      "wallpapers:item/skirting_board/place3",
+      "wallpapers:item/skirting_board/place4"
+    ],
+    "subtitle": "subtitles.item.skirting_board.remove"
   }
 }

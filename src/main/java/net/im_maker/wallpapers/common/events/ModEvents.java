@@ -1,7 +1,6 @@
 package net.im_maker.wallpapers.common.events;
 
 import net.im_maker.wallpapers.Wallpapers;
-import net.im_maker.wallpapers.common.block.ModBlocks;
 import net.im_maker.wallpapers.common.item.ModItems;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
@@ -20,8 +19,8 @@ public class ModEvents {
         List<VillagerTrades.ItemListing> genericTrades = event.getGenericTrades();
 
         genericTrades.add((pTrader, pRandom) -> new MerchantOffer(
-                new ItemStack(ModBlocks.RED_WALLPAPER_BLOCK.get(), 8),
-                new ItemStack(ModBlocks.BLUE_WALLPAPER_BLOCK.get(), 8),
+                new ItemStack(ModItems.RED_WALLPAPER_ROLL.get(), 2),
+                new ItemStack(ModItems.BLUE_WALLPAPER_ROLL.get(), 2),
                 new ItemStack(ModItems.PRIMARY_WALLPAPER_ROLL.get(), 16),
                 16, 17, 0.7f));
     }

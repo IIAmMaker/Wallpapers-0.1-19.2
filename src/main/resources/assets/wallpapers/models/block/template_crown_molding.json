@@ -1,0 +1,23 @@
+{
+	"credit": "Made By Im_Maker/I_AmMaker",
+	"parent": "block/cube_all",
+	"textures": {
+		"crown_molding": "#crown_molding",
+		"crown_molding_up": "#crown_molding_up",
+		"particle": "#crown_molding"
+	},
+	"elements": [
+		{
+			"from": [-0.05, 12.5, -0.05],
+			"to": [16.05, 16.05, 16.05],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 12, 0]},
+			"faces": {
+				"north": {"uv": [0, 0, 16, 4], "texture": "#crown_molding"},
+				"east": {"uv": [0, 0, 16, 4], "texture": "#crown_molding"},
+				"south": {"uv": [0, 0, 16, 4], "texture": "#crown_molding"},
+				"west": {"uv": [0, 0, 16, 4], "texture": "#crown_molding"},
+				"up": {"uv": [0, 0, 16, 16], "texture": "#crown_molding_up"}
+			}
+		}
+	]
+}

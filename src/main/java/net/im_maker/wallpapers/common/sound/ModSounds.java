@@ -20,7 +20,8 @@ public class ModSounds {
     public static final RegistryObject<SoundEvent> WALLPAPER_BLOCK_FALL = registerSoundEvents("block.wallpaper_block.fall");
 
     public static final RegistryObject<SoundEvent> WALLPAPER_ROLL_WALLPAPERING = registerSoundEvents("item.wallpaper_roll.wallpapering");
-    public static final RegistryObject<SoundEvent> BASEBOARD_PLACE = registerSoundEvents("item.baseboard.place");
+    public static final RegistryObject<SoundEvent> SKIRTING_BOARD_PLACE = registerSoundEvents("item.skirting_board.place");
+    public static final RegistryObject<SoundEvent> SKIRTING_BOARD_REMOVE = registerSoundEvents("item.skirting_board.remove");
 
     public static final ForgeSoundType WALLPAPER_BLOCK = new ForgeSoundType(1f, 1f,
             ModSounds.WALLPAPER_BLOCK_BREAK,

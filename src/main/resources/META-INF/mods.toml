@@ -1,25 +1,26 @@
 modLoader="javafml"
 loaderVersion="[43,)"
-license="MIT License"
+license="Maker's Mods License"
 [[mods]]
 modId="wallpapers"
 displayName="Wallpapers"
-version="0.9a-1.20.1"
+version="1.2a-Forge-1.20.1"
 logoFile="wallpapers_logo.png"
-authors="Maker,s Mods"
-credits="Im_Maker"
+authors="Im_Maker"
+credits=""
 description='''
-Adds new colorful building blocks called Wallpaper Blocks!
+Add new colorful wallpapers that come in a variety of patterns to enhance the aesthetic appeal of your walls!!
+Twitter/X:I_AmMaker
 '''
 [[dependencies.wallpapers]]
-    modId="forge"
-    mandatory=true
-    versionRange="[43,)"
-    ordering="NONE"
-    side="BOTH"
+modId="forge"
+mandatory=true
+versionRange="[43,)"
+ordering="NONE"
+side="BOTH"
 [[dependencies.wallpapers]]
-    modId="minecraft"
-    mandatory=true
-    versionRange="[1.20,1.20.2)"
-    ordering="NONE"
-    side="BOTH"
+modId="minecraft"
+mandatory=true
+versionRange="[1.20,1.20.2)"
+ordering="NONE"
+side="BOTH"

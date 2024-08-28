@@ -1,0 +1,9 @@
+{
+  "parent": "wallpapers:block/template_skirting_board",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "particle": "wallpapers:block/prismarine_skirting_board",
+    "skirting_board": "wallpapers:block/prismarine_skirting_board",
+    "skirting_board_bottom": "wallpapers:block/prismarine_skirting_board_bottom"
+  }
+}

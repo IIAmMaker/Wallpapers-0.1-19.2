@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "wallpapers:light_blue_wallpaper_block"
+      "item": "wallpapers:ultimate_wallpaper_block"
     },
     "title": {
       "translate": "advancements.wallpapers.all_wallpapers.title"
@@ -19,311 +19,437 @@
     "red": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:red_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:red_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "orange": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:orange_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:orange_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "yellow": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:yellow_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:yellow_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "lime": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:lime_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:lime_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "green": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:green_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:green_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "cyan": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:cyan_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:cyan_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "light_blue": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:light_blue_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:light_blue_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "blue": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:blue_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:blue_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "purple": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:purple_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:purple_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "magenta": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:magenta_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:magenta_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "pink": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:pink_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:pink_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "brown": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:brown_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:brown_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "black": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:black_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:black_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "gray": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:gray_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:gray_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "light_gray": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:light_gray_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:light_gray_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "white": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:white_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:white_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     },
     "primary": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:primary_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:primary_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
+      }
+    },
+    "frosted": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:frosted_wallpaper_roll"
+              ]
+            }
+          }
+        ]
       }
     }
   },
   "requirements": [
-    [
-      "red"
-    ],
-    [
-      "orange"
-    ],
-    [
-      "yellow"
-    ],
-    [
-      "lime"
-    ],
-    [
-      "green"
-    ],
-    [
-      "cyan"
-    ],
-    [
-      "light_blue"
-    ],
-    [
-      "blue"
-    ],
-    [
-      "purple"
-    ],
-    [
-      "magenta"
-    ],
-    [
-      "pink"
-    ],
-    [
-      "brown"
-    ],
-    [
-      "black"
-    ],
-    [
-      "gray"
-    ],
-    [
-      "light_gray"
-    ],
-    [
-      "white"
-    ],
-    [
-      "primary"
-    ]
+    ["red"],
+    ["orange"],
+    ["yellow"],
+    ["lime"],
+    ["green"],
+    ["cyan"],
+    ["light_blue"],
+    ["blue"],
+    ["purple"],
+    ["magenta"],
+    ["pink"],
+    ["brown"],
+    ["black"],
+    ["gray"],
+    ["light_gray"],
+    ["white"],
+    ["primary"],
+    ["frosted"]
   ],
   "rewards": {
     "experience": 170

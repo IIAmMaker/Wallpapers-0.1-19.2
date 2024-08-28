@@ -1,0 +1,22 @@
+{
+	"credit": "Made By Im_Maker/I_AmMaker",
+	"parent": "block/cube_all",
+	"textures": {
+		"skirting_board": "#skirting_board",
+		"skirting_board_bottom": "#skirting_board_bottom",
+		"particle": "#skirting_board"
+	},
+	"elements": [
+		{
+			"from": [-0.05, -0.05, -0.05],
+			"to": [16.05, 4.05, 16.05],
+			"faces": {
+				"north": {"uv": [0, 12, 16, 16], "texture": "#skirting_board"},
+				"east": {"uv": [0, 12, 16, 16], "texture": "#skirting_board"},
+				"south": {"uv": [0, 12, 16, 16], "texture": "#skirting_board"},
+				"west": {"uv": [0, 12, 16, 16], "texture": "#skirting_board"},
+				"down": {"uv": [0, 0, 16, 16], "texture": "#skirting_board_bottom"}
+			}
+		}
+	]
+}

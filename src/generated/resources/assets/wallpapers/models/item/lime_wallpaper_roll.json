@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "wallpapers:item/lime_wallpaper_roll"
+  }
+}

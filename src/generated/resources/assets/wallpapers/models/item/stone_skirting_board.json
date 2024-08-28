@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "wallpapers:item/stone_skirting_board"
+  }
+}

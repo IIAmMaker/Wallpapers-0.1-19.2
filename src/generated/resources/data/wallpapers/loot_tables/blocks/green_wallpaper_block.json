@@ -1,0 +1,282 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "wallpapers:green_wallpaper_block"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "skirting_board": "dripstone"
+              }
+            }
+          ],
+          "name": "wallpapers:dripstone_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "skirting_board": "quartz"
+              }
+            }
+          ],
+          "name": "wallpapers:quartz_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "skirting_board": "gold"
+              }
+            }
+          ],
+          "name": "wallpapers:gold_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "skirting_board": "prismarine"
+              }
+            }
+          ],
+          "name": "wallpapers:prismarine_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "skirting_board": "stone"
+              }
+            }
+          ],
+          "name": "wallpapers:stone_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "skirting_board": "deepslate"
+              }
+            }
+          ],
+          "name": "wallpapers:deepslate_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "skirting_board": "blackstone"
+              }
+            }
+          ],
+          "name": "wallpapers:blackstone_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "crown_molding": "dripstone"
+              }
+            }
+          ],
+          "name": "wallpapers:dripstone_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "crown_molding": "quartz"
+              }
+            }
+          ],
+          "name": "wallpapers:quartz_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "crown_molding": "gold"
+              }
+            }
+          ],
+          "name": "wallpapers:gold_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "crown_molding": "prismarine"
+              }
+            }
+          ],
+          "name": "wallpapers:prismarine_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "crown_molding": "stone"
+              }
+            }
+          ],
+          "name": "wallpapers:stone_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "crown_molding": "deepslate"
+              }
+            }
+          ],
+          "name": "wallpapers:deepslate_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "conditions": [
+            {
+              "block": "wallpapers:green_wallpaper_block",
+              "condition": "minecraft:block_state_property",
+              "properties": {
+                "crown_molding": "blackstone"
+              }
+            }
+          ],
+          "name": "wallpapers:blackstone_skirting_board"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "wallpapers:blocks/green_wallpaper_block"
+}

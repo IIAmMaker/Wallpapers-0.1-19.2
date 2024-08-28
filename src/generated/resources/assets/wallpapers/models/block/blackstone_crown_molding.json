@@ -1,0 +1,9 @@
+{
+  "parent": "wallpapers:block/template_crown_molding",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "crown_molding": "wallpapers:block/blackstone_skirting_board",
+    "crown_molding_up": "wallpapers:block/blackstone_skirting_board_bottom",
+    "particle": "wallpapers:block/blackstone_skirting_board"
+  }
+}

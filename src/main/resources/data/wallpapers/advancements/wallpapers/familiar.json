@@ -19,16 +19,24 @@
     "familiar": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "items": [
-            "wallpapers:yellow_wallpaper_roll"
-          ]
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "items": [
+                "wallpapers:yellow_wallpaper_roll"
+              ]
+            }
           }
-        }
+        ]
       }
     }
   },
@@ -36,5 +44,6 @@
     [
       "familiar"
     ]
-  ]
+  ],
+  "sends_telemetry_event": true
 }

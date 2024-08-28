@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "wallpapers:yellow_wallpaper_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_yellow_wallpaper_roll": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "wallpapers:yellow_wallpaper_roll"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_yellow_wallpaper_roll",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "wallpapers:yellow_wallpaper_block"
+    ]
+  },
+  "sends_telemetry_event": false
+}

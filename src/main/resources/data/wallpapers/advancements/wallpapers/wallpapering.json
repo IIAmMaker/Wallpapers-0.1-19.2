@@ -1,7 +1,7 @@
 {
   "display": {
     "icon": {
-      "item": "wallpapers:blue_wallpaper_block"
+      "item": "wallpapers:light_blue_wallpaper_block"
     },
     "title": {
       "translate": "advancements.wallpapers.wallpapering.title"
@@ -19,14 +19,22 @@
     "wallpapering": {
       "trigger": "minecraft:item_used_on_block",
       "conditions": {
-        "item": {
-          "tag": "wallpapers:wallpaper_rolls"
-        },
-        "location": {
-          "block": {
-            "tag": "minecraft:planks"
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "minecraft:planks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "tag": "wallpapers:wallpaper_rolls"
+            }
           }
-        }
+        ]
       }
     }
   },
@@ -34,5 +42,6 @@
     [
       "wallpapering"
     ]
-  ]
+  ],
+  "sends_telemetry_event": true
 }

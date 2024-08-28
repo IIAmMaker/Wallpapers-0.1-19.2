@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "minecraft:snowball"
+    },
+    "P": {
+      "item": "minecraft:paper"
+    },
+    "S": {
+      "item": "minecraft:slime_ball"
+    }
+  },
+  "pattern": [
+    "PPP",
+    "PDP",
+    "PSP"
+  ],
+  "result": {
+    "item": "wallpapers:frosted_wallpaper_roll"
+  },
+  "show_notification": true
+}

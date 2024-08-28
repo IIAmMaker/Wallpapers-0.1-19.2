@@ -1,0 +1,46 @@
+{
+  "display": {
+    "icon": {
+      "item": "wallpapers:broken_quartz_baseboard"
+    },
+    "title": {
+      "translate": "advancements.wallpapers.skirting_off.title"
+    },
+    "description": {
+      "translate": "advancements.wallpapers.skirting_off.description"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "wallpapers:wallpapers/skirting_on",
+  "criteria": {
+    "skirting_on": {
+      "trigger": "minecraft:item_used_on_block",
+      "conditions": {
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "tag": "wallpapers:wallpaper_blocks"
+              }
+            }
+          },
+          {
+            "condition": "minecraft:match_tool",
+            "predicate": {
+              "tag": "minecraft:pickaxes"
+            }
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "skirting_on"
+    ]
+  ]
+}

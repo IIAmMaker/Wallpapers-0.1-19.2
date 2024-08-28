@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "wallpapers:item/slate_wallpaper_roll"
+  }
+}

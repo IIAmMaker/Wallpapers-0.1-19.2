@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "wallpapers:item/deepslate_skirting_board"
+  }
+}

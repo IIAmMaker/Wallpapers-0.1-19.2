@@ -1,0 +1,121 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "wallpapers:block/ultimate_wallpaper_block"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/dripstone_skirting_board"
+      },
+      "when": {
+        "skirting_board": "dripstone"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/quartz_skirting_board"
+      },
+      "when": {
+        "skirting_board": "quartz"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/gold_skirting_board"
+      },
+      "when": {
+        "skirting_board": "gold"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/prismarine_skirting_board"
+      },
+      "when": {
+        "skirting_board": "prismarine"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/stone_skirting_board"
+      },
+      "when": {
+        "skirting_board": "stone"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/deepslate_skirting_board"
+      },
+      "when": {
+        "skirting_board": "deepslate"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/blackstone_skirting_board"
+      },
+      "when": {
+        "skirting_board": "blackstone"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/dripstone_crown_molding"
+      },
+      "when": {
+        "crown_molding": "dripstone"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/quartz_crown_molding"
+      },
+      "when": {
+        "crown_molding": "quartz"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/gold_crown_molding"
+      },
+      "when": {
+        "crown_molding": "gold"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/prismarine_crown_molding"
+      },
+      "when": {
+        "crown_molding": "prismarine"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/stone_crown_molding"
+      },
+      "when": {
+        "crown_molding": "stone"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/deepslate_crown_molding"
+      },
+      "when": {
+        "crown_molding": "deepslate"
+      }
+    },
+    {
+      "apply": {
+        "model": "wallpapers:block/blackstone_crown_molding"
+      },
+      "when": {
+        "crown_molding": "blackstone"
+      }
+    }
+  ]
+}
