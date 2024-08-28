@@ -1,24 +1,17 @@
 package net.im_maker.wallpapers.datagen;
 
-import com.google.common.collect.ImmutableMap;
 import com.ninni.dye_depot.registry.DDDyes;
 import net.im_maker.wallpapers.Wallpapers;
 import net.im_maker.wallpapers.common.block.ModBlocks;
-import net.im_maker.wallpapers.common.block.block_values.ModBlockStateProperties;
 import net.im_maker.wallpapers.common.block.block_values.SkirtingBoard;
 import net.im_maker.wallpapers.common.block.custom.WallpaperBlock;
-import net.minecraft.core.Direction;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.DyeColor;
-import net.minecraft.world.level.block.*;
-import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraft.world.level.block.state.properties.Property;
-import net.minecraft.world.level.block.state.properties.WallSide;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
-import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
-import net.minecraftforge.client.model.generators.MultiPartBlockStateBuilder;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.fml.ModList;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -140,33 +133,33 @@ public class ModBlockStateProvider extends BlockStateProvider {
         getMultipartBuilder(block)
                 .part().modelFile(wallpaperBlock).addModel().end()
                 .part().modelFile(dripstoneSB).addModel()
-                .condition(WallpaperBlock.Skirting_Board, SkirtingBoard.DRIPSTONE).end()
+                .condition(WallpaperBlock.SKIRTING_BOARD, SkirtingBoard.DRIPSTONE).end()
                 .part().modelFile(quartzSB).addModel()
-                .condition(WallpaperBlock.Skirting_Board, SkirtingBoard.QUARTZ).end()
+                .condition(WallpaperBlock.SKIRTING_BOARD, SkirtingBoard.QUARTZ).end()
                 .part().modelFile(goldSB).addModel()
-                .condition(WallpaperBlock.Skirting_Board, SkirtingBoard.GOLD).end()
+                .condition(WallpaperBlock.SKIRTING_BOARD, SkirtingBoard.GOLD).end()
                 .part().modelFile(prismarineSB).addModel()
-                .condition(WallpaperBlock.Skirting_Board, SkirtingBoard.PRISMARINE).end()
+                .condition(WallpaperBlock.SKIRTING_BOARD, SkirtingBoard.PRISMARINE).end()
                 .part().modelFile(stoneSB).addModel()
-                .condition(WallpaperBlock.Skirting_Board, SkirtingBoard.STONE).end()
+                .condition(WallpaperBlock.SKIRTING_BOARD, SkirtingBoard.STONE).end()
                 .part().modelFile(deepslateSB).addModel()
-                .condition(WallpaperBlock.Skirting_Board, SkirtingBoard.DEEPSLATE).end()
+                .condition(WallpaperBlock.SKIRTING_BOARD, SkirtingBoard.DEEPSLATE).end()
                 .part().modelFile(blackstoneSB).addModel()
-                .condition(WallpaperBlock.Skirting_Board, SkirtingBoard.BLACKSTONE).end()
+                .condition(WallpaperBlock.SKIRTING_BOARD, SkirtingBoard.BLACKSTONE).end()
                 .part().modelFile(dripstoneCM).addModel()
-                .condition(WallpaperBlock.Crown_molding, SkirtingBoard.DRIPSTONE).end()
+                .condition(WallpaperBlock.CROWN_MOLDING, SkirtingBoard.DRIPSTONE).end()
                 .part().modelFile(quartzCM).addModel()
-                .condition(WallpaperBlock.Crown_molding, SkirtingBoard.QUARTZ).end()
+                .condition(WallpaperBlock.CROWN_MOLDING, SkirtingBoard.QUARTZ).end()
                 .part().modelFile(goldCM).addModel()
-                .condition(WallpaperBlock.Crown_molding, SkirtingBoard.GOLD).end()
+                .condition(WallpaperBlock.CROWN_MOLDING, SkirtingBoard.GOLD).end()
                 .part().modelFile(prismarineCM).addModel()
-                .condition(WallpaperBlock.Crown_molding, SkirtingBoard.PRISMARINE).end()
+                .condition(WallpaperBlock.CROWN_MOLDING, SkirtingBoard.PRISMARINE).end()
                 .part().modelFile(stoneCM).addModel()
-                .condition(WallpaperBlock.Crown_molding, SkirtingBoard.STONE).end()
+                .condition(WallpaperBlock.CROWN_MOLDING, SkirtingBoard.STONE).end()
                 .part().modelFile(deepslateCM).addModel()
-                .condition(WallpaperBlock.Crown_molding, SkirtingBoard.DEEPSLATE).end()
+                .condition(WallpaperBlock.CROWN_MOLDING, SkirtingBoard.DEEPSLATE).end()
                 .part().modelFile(blackstoneCM).addModel()
-                .condition(WallpaperBlock.Crown_molding, SkirtingBoard.BLACKSTONE).end();
+                .condition(WallpaperBlock.CROWN_MOLDING, SkirtingBoard.BLACKSTONE).end();
     }
 
     private String name(Block block) {
